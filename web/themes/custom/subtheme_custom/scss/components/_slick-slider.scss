@@ -1,0 +1,108 @@
+@use "../partials/importer" as *;
+.block-views-blockslider-block-1 {
+  .view-display-id-block_1 {
+    height: 60vh;
+    .view-content {
+      .slick-dots {
+        bottom: 15px;
+        li {
+          width: 70px;
+          button {
+            &::before {
+              background-color: white;
+              content: "";
+              height: 5px;
+              width: 50px;
+            }
+          }
+        }
+      }
+      .slick-prev {
+        color: #000;
+        &::before {
+          color: #000;
+          font-weight: 300; /* Adjust the font weight as needed */
+          font-size: 50px; /* Adjust the font size as needed */
+        }
+      }
+      .slick-next {
+        color: #000;
+        &::before {
+          color: #000;
+          font-weight: 300; /* Adjust the font weight as needed */
+          font-size: 50px; /* Adjust the font size as needed */
+        }
+      }
+      .field-content {
+        /* height: 90vh; */
+        height: inherit;
+        .img-fluid {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+/* .slick-dots {
+    bottom: 15px;
+    li {
+      width: 80px;
+      button {
+        &::before {
+          content: "";
+          height: 5px;
+          background-color: #000;
+          width: 50px;
+        }
+      }
+    }
+  } */
+
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  &.fa-solid.fa-chevron-right.fa-2xl {
+    right: 0%;
+    bottom: 50%;
+    color: #f6f5f4;
+    font-size: 50px;
+  }
+  &.fa-solid.fa-chevron-left.fa-2xl {
+    top: 50%;
+    font-size: 50px;
+    color: #f6f5f4;
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+}
+.views-field {
+  &.views-field.views-field-field-movie-image {
+    height: 100%;
+  }
+  &.views-field-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    span.field-content {
+      a {
+        font-size: 50px;
+        text-decoration: none;
+        color: #f6f5f4;
+      }
+    }
+  }
+}
+div.slick-slide {
+  position: relative;
+}
+
+.region-content {
+  padding: 0 0;
+}
+.slick-track {
+  height: 60vh;
+}

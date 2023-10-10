@@ -1,0 +1,53 @@
+@use "../partials/importer" as *;
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    /* Styles for the modal content */
+    .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        /* Styles for the close button */
+        .modal-img{
+            width: 45%;
+            img{
+                height: auto;
+                width: 100%;
+            }
+        }
+        .modal-text{
+            width: 45%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 0%;
+            right: 1%;
+            &:hover,
+            &:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

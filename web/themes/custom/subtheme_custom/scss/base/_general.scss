@@ -1,0 +1,34 @@
+@use '../partials/importer' as *;
+
+.flex-col{
+    @include flex-prop; 
+    flex-direction: column;
+}
+.flex-row{
+    @include flex-prop; 
+    flex-direction: row;
+    @media (max-width: 428px){
+        flex-direction: column;
+    }
+}
+/* .container{
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+} */
+.round-corner{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding:10px 20px;
+}
+.overlay{
+    background-color: rgba(0,0,0 ,0.7) ;
+}
+
+#block-subtheme-custom-content{
+    display: none;
+}

@@ -13,6 +13,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -46,4 +47,7 @@ module:
 theme:
   olivero: 0
   claro: 0
+  stable9: 0
+  bootstrap5: 0
+  subtheme_custom: 0
 profile: standard

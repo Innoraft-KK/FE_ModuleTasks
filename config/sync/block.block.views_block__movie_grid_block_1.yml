@@ -1,0 +1,29 @@
+uuid: e3b49c19-4423-4066-a19e-a21d0bacff42
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.movie_grid
+  module:
+    - system
+    - views
+  theme:
+    - subtheme_custom
+id: views_block__movie_grid_block_1
+theme: subtheme_custom
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:movie_grid-block_1'
+settings:
+  id: 'views_block:movie_grid-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /movies
