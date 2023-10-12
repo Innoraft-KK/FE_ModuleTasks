@@ -1,0 +1,10 @@
+uuid: ea16965d-4a5e-4c2d-b819-24c1d5000832
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.clean_view
+label: 'Clean View'
+targetEntityType: node
+cache: true

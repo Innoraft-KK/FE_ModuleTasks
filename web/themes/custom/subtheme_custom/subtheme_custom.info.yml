@@ -5,8 +5,6 @@ core_version_requirement: '^9.4 || ^10'
 'base theme': bootstrap5
 libraries:
   - subtheme_custom/global-styling
-  - subtheme_custom/slick
-  - subtheme_custom/movie-grid
 ckeditor_stylesheets:
   - css/style.css
 ckeditor5-stylesheets:

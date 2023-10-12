@@ -1,17 +1,14 @@
-uuid: 1c956e7d-8a92-474d-93c5-17a4cdaa8457
+uuid: f80ac9b5-3c74-491d-a212-7f574a40090c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_movie_image
-    - node.type.movies
-    - responsive_image.styles.subtheme_movie_slider
+    - node.type.page
   module:
     - node
-    - responsive_image
     - user
-id: slider
-label: Slider
+id: modal
+label: Modal
 module: views
 description: ''
 tag: ''
@@ -24,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Slider
+      title: Modal
       fields:
         title:
           id: title
@@ -67,7 +64,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -89,75 +86,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_movie_image:
-          id: field_movie_image
-          table: node__field_movie_image
-          field: field_movie_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: responsive_image
-          settings:
-            responsive_image_style: subtheme_movie_slider
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 1
       exposed_form:
         type: basic
         options:
@@ -214,7 +147,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            movies: movies
+            page: page
       style:
         type: default
       row:
@@ -238,15 +171,13 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_movie_image'
+      tags: {  }
   block_1:
     id: block_1
-    display_title: Slider
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:
-      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -255,5 +186,4 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_movie_image'
+      tags: {  }

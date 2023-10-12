@@ -2,6 +2,9 @@ uuid: 1ea12a8b-e063-4d20-9f29-18b57f3b1d48
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.node.clean_view
+    - core.entity_view_mode.node.custom_view_mod
   module:
     - node
     - user
@@ -203,8 +206,46 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: clean_view
+      defaults:
+        style: false
+        row: false
       display_extenders: {  }
       path: movies
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_2:
+    id: page_2
+    display_title: 'Page 2'
+    display_plugin: page
+    position: 2
+    display_options:
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: custom_view_mod
+      defaults:
+        style: false
+        row: false
+      display_extenders: {  }
+      path: view-mode
     cache_metadata:
       max-age: -1
       contexts:

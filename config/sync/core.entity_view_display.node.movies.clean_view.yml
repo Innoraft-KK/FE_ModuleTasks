@@ -1,0 +1,22 @@
+uuid: 644c408d-f67d-4de6-946b-6f7d251daad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.clean_view
+    - field.field.node.movies.field_description
+    - field.field.node.movies.field_movie_image
+    - field.field.node.movies.field_release_date
+    - node.type.movies
+  module:
+    - user
+id: node.movies.clean_view
+targetEntityType: node
+bundle: movies
+mode: clean_view
+content: {  }
+hidden:
+  field_description: true
+  field_movie_image: true
+  field_release_date: true
+  links: true

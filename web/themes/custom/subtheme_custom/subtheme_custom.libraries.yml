@@ -8,7 +8,7 @@ global-styling:  # This is the name of your library.
 slick:
   css:
     theme:
-      css/style.css: {}  # This is a relative path to your theme's CSS file.
+      css/slick-slider.css: {}  # This is a relative path to your theme's CSS file.
       //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: {type: external}
       //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: {type: external}
   js:
@@ -21,11 +21,15 @@ slick:
 movie-grid:
   css:
     theme:
-      css/style.css: {}
-      //cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css: { type: external}
+      css/movie-grid.css: {}
+      css/modal.css: {}
+
+modal:
+  css:
+    theme:
+      css/modal.css: {}
   js:
-    //cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js: { type: external}
-    js/movie-grid.js: {}
+    js/modal.js: {}
   dependencies:
     - core/jquery
     - core/drupal

@@ -1,22 +1,22 @@
-uuid: 4b40a7f8-b482-4899-99f1-c32ad2bf1249
+uuid: e3cd53f6-7b26-4633-b611-2f10956b9d81
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.slider
+    - views.view.modal
   module:
     - system
     - views
   theme:
     - subtheme_custom
-id: views_block__slider_block_1
+id: views_block__modal_block_1
 theme: subtheme_custom
 region: content
-weight: 0
+weight: -6
 provider: null
-plugin: 'views_block:slider-block_1'
+plugin: 'views_block:modal-block_1'
 settings:
-  id: 'views_block:slider-block_1'
+  id: 'views_block:modal-block_1'
   label: ''
   label_display: '0'
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/movies\r\n/node/8"
+    pages: "/movies\r\n"

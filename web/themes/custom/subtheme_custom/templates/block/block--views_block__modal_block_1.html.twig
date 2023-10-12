@@ -26,8 +26,7 @@
  * @see template_preprocess_block()
  */
 #}
-
-{{ attach_library('subtheme_custom/movie-grid') }}
+{{ attach_library('subtheme_custom/modal') }}
 {%
   set classes = [
     'block',
@@ -36,12 +35,26 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
+  {# {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
-  {{ title_suffix }}
-  {% block content %}
+  {{ title_suffix }} #}
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <div class="modal-img">
+          <img src="" alt="">
+        </div>
+        <div class="modal-text">
+        <h2>Modal Title</h2>
+        <p id="modal-date">This is a simple modal dialog.</p>
+        <p id="modal-desc"></p>
+        </div>
+    </div>
+</div>
+  {# {% block content %}
     {{ content }}
-  {% endblock %}
+  {% endblock %} #}
 </div>
