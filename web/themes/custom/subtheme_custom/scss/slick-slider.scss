@@ -1,7 +1,6 @@
 @use "partials/importer" as *;
 .block-views-blockslider-block-1 {
   .view-display-id-block_1 {
-   /*  height: 60vh; */
     .view-content {
       .slick-dots {
         bottom: 15px;
@@ -9,7 +8,7 @@
           width: 70px;
           button {
             &::before {
-              background-color: white;
+              background-color: $primaryWhite;
               content: "";
               height: 5px;
               width: 50px;
@@ -17,24 +16,15 @@
           }
         }
       }
-      .slick-prev {
-        color: #000;
+      .slick-prev, .slick-next {
+        color: $primaryBlack;
         &::before {
-          color: #000;
-          font-weight: 300; /* Adjust the font weight as needed */
-          font-size: 50px; /* Adjust the font size as needed */
-        }
-      }
-      .slick-next {
-        color: #000;
-        &::before {
-          color: #000;
-          font-weight: 300; /* Adjust the font weight as needed */
-          font-size: 50px; /* Adjust the font size as needed */
+          color: $primaryBlack;
+          font-weight: 300;
+          font-size: 50px;
         }
       }
       .field-content {
-        /* height: 90vh; */
         height: inherit;
         .img-fluid {
           width: auto;
@@ -45,39 +35,26 @@
     }
   }
 }
-/* .slick-dots {
-    bottom: 15px;
-    li {
-      width: 80px;
-      button {
-        &::before {
-          content: "";
-          height: 5px;
-          background-color: #000;
-          width: 50px;
-        }
-      }
-    }
-  } */
 
-.slick-arrow {
-  position: absolute;
-  z-index: 1;
-  &.fa-solid.fa-chevron-right.fa-2xl {
-    right: 0%;
-    bottom: 50%;
-    color: #f6f5f4;
-    font-size: 50px;
-  }
-  &.fa-solid.fa-chevron-left.fa-2xl {
-    top: 50%;
-    font-size: 50px;
-    color: #f6f5f4;
-  }
-}
 .slick-dotted.slick-slider {
   margin-bottom: 0px !important;
+  .slick-arrow {
+    position: absolute;
+    z-index: 1;
+    &.fa-solid.fa-chevron-right.fa-2xl {
+      right: 0%;
+      bottom: 50%;
+      color: $primaryWhite;
+      font-size: 50px;
+    }
+    &.fa-solid.fa-chevron-left.fa-2xl {
+      top: 50%;
+      font-size: 50px;
+      color: $primaryWhite;
+    }
+  }
 }
+
 .views-field {
   &.views-field.views-field-field-movie-image {
     height: 100%;
@@ -91,11 +68,12 @@
       a {
         font-size: 50px;
         text-decoration: none;
-        color: #f6f5f4;
+        color: $primaryWhite;
       }
     }
   }
 }
+
 div.slick-slide {
   position: relative;
 }
@@ -103,6 +81,7 @@ div.slick-slide {
 .region-content {
   padding: 0 0;
 }
+
 .slick-track {
   height: 60vh;
 }
