@@ -1,0 +1,71 @@
+@use "partials/importer" as *;
+.block-views-blockmovie-grid-block-1 {
+  .view-id-movie_grid {
+    .view-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      > div:nth-child(n + 1):nth-child(-n + 3) {
+        flex: 1 0 33%;
+      }
+      > div:nth-child(n + 4):nth-child(-n + 5) {
+        flex: 1 0 50%;
+      }
+      > div:nth-child(n + 6):nth-child(-n + 9) {
+        flex: 1 0 25%;
+      }
+      .views-row {
+        position: relative;
+        .views-field-nothing {
+          padding: 10px;
+          .field-content {
+            position: relative;
+            display: block;
+            .movie-grid-item {
+              position: absolute;
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start;
+              padding: 10px;
+              background-color: rgba(0, 0, 0, 0.5);
+              &:hover {
+                background-color: $overlayHoverColor;
+                & .movie-grid-item__date {
+                  display: block;
+                }
+              }
+              &__title {
+                a {
+                  font-size: 50px;
+                  color: $primaryWhite;
+                  text-decoration: none;
+                }
+              }
+              &__date {
+                font-size: 30px;
+                color: $primaryWhite;
+                display: none;
+              }
+              &__desc {
+                display: none;
+              }
+              &__image {
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+uuid: 7cd9f9ea-a7a7-491e-9244-0f46b6d3da1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subtheme_custom
+_core:
+  default_config_hash: GB0fByQHK1QiAxCbBipVRVsdjRevtmAAy6_YaWRJKtM
+id: subtheme_custom_page_title
+theme: subtheme_custom
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /movies

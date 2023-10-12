@@ -1,0 +1,46 @@
+uuid: d2a34721-7ba6-4d1d-958e-56b273e4aa3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.custom_view_mod
+    - field.field.node.movies.field_description
+    - field.field.node.movies.field_movie_image
+    - field.field.node.movies.field_release_date
+    - node.type.movies
+  module:
+    - datetime
+    - image
+    - user
+id: node.movies.custom_view_mod
+targetEntityType: node
+bundle: movies
+mode: custom_view_mod
+content:
+  field_movie_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_release_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'j F Y'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_description: true

@@ -1,0 +1,36 @@
+global-styling:  # This is the name of your library.
+  css:
+    theme:
+      css/style.css: {}
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css: {type: external}
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js: {type: external}
+slick:
+  css:
+    theme:
+      css/slick-slider.css: {}  # This is a relative path to your theme's CSS file.
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: {type: external}
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: {type: external}
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external}
+    js/slick.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+movie-grid:
+  css:
+    theme:
+      css/movie-grid.css: {}
+      css/modal.css: {}
+
+modal:
+  css:
+    theme:
+      css/modal.css: {}
+  js:
+    js/modal.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once

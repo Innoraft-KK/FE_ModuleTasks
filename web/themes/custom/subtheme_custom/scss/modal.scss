@@ -1,0 +1,50 @@
+@use "partials/importer" as *;
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backgroundOverlayColor;
+  .modal-content {
+    background-color: $primaryWhite;
+    margin: 10% auto;
+    padding: $modalPadding;
+    border-radius: $modalBorderRadius;
+    width: $modalWidth;
+    box-shadow: $boxShadow;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    .modal-img {
+      width: $modalImageWidth;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+    .modal-text {
+      width: $modalTextWidth;
+    }
+    .close {
+      color: $modalTextColor;
+      float: right;
+      font-size: $modalCloseButtonSize;
+      font-weight: bold;
+      position: absolute;
+      top: $modalCloseButtonTop;
+      right: $modalCloseButtonRight;
+      &:hover,
+      &:focus {
+        color: $modalCloseButtonHoverColor;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

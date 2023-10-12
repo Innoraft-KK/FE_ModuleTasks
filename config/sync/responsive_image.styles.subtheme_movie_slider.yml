@@ -1,0 +1,41 @@
+uuid: 1e4a10e7-6235-4353-b67d-2e05ada81803
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.slider_1
+  theme:
+    - subtheme_custom
+id: subtheme_movie_slider
+label: 'Subtheme movie slider'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - large
+        - slider_1
+    breakpoint_id: subtheme_custom.screen.xxl-min
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - large
+        - slider_1
+    breakpoint_id: subtheme_custom.screen.md-min
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - large
+        - slider_1
+    breakpoint_id: subtheme_custom.screen.xs-max
+    multiplier: 1x
+breakpoint_group: subtheme_custom.screen
+fallback_image_style: large

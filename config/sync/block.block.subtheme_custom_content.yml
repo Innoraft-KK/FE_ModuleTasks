@@ -1,0 +1,22 @@
+uuid: 355b7b45-81b1-4786-9a10-1203b876ead0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subtheme_custom
+_core:
+  default_config_hash: _tDvKIX7TBoduwHWmyhSVBN4aduVWbowtHmf-BxiJnU
+id: subtheme_custom_content
+theme: subtheme_custom
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

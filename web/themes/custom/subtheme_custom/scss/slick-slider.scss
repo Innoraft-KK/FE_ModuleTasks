@@ -1,0 +1,87 @@
+@use "partials/importer" as *;
+.block-views-blockslider-block-1 {
+  .view-display-id-block_1 {
+    .view-content {
+      .slick-dots {
+        bottom: 15px;
+        li {
+          width: 70px;
+          button {
+            &::before {
+              background-color: $primaryWhite;
+              content: "";
+              height: 5px;
+              width: 50px;
+            }
+          }
+        }
+      }
+      .slick-prev, .slick-next {
+        color: $primaryBlack;
+        &::before {
+          color: $primaryBlack;
+          font-weight: 300;
+          font-size: 50px;
+        }
+      }
+      .field-content {
+        height: inherit;
+        .img-fluid {
+          width: auto;
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+  .slick-arrow {
+    position: absolute;
+    z-index: 1;
+    &.fa-solid.fa-chevron-right.fa-2xl {
+      right: 0%;
+      bottom: 50%;
+      color: $primaryWhite;
+      font-size: 50px;
+    }
+    &.fa-solid.fa-chevron-left.fa-2xl {
+      top: 50%;
+      font-size: 50px;
+      color: $primaryWhite;
+    }
+  }
+}
+
+.views-field {
+  &.views-field.views-field-field-movie-image {
+    height: 100%;
+  }
+  &.views-field-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    span.field-content {
+      a {
+        font-size: 50px;
+        text-decoration: none;
+        color: $primaryWhite;
+      }
+    }
+  }
+}
+
+div.slick-slide {
+  position: relative;
+}
+
+.region-content {
+  padding: 0 0;
+}
+
+.slick-track {
+  height: 60vh;
+}

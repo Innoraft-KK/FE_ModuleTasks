@@ -1,0 +1,15 @@
+uuid: e9da6bf9-8a9b-4cd9-ab0e-fdb72b0bef23
+langcode: en
+status: true
+dependencies: {  }
+name: slider_images
+label: 'Slider Images'
+effects:
+  cdff0b69-f433-4c5b-82e7-04a2e7d30d23:
+    uuid: cdff0b69-f433-4c5b-82e7-04a2e7d30d23
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 500
+      upscale: true
